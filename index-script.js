@@ -37,7 +37,7 @@ function removeSlideInOutAnimationFromValidationPopup() {
 
 function emptyFormInputFields() {
   let counter = buyerForm.length - 1; 
-  
+
   while (counter > -1) {
     buyerForm[counter].value = "";
     counter--;
@@ -49,9 +49,9 @@ productOneQuantityContainer.addEventListener("click", function(event) {
   let productQuantityElement = productOneQuantityContainer.children[1];
   let productQuantityElementTextContent = Number(productQuantityElement.textContent);
 
-  if (clickedElement.className === "increment-button") {
+  if (clickedElement.classList.contains("add") === true) {
     productQuantityElement.textContent = productQuantityElementTextContent + 1;
-  } else if (clickedElement.className === "decrement-button" && productQuantityElementTextContent > 0) {
+  } else if (clickedElement.classList.contains("remove") === true && productQuantityElementTextContent > 0) {
     productQuantityElement.textContent = productQuantityElementTextContent - 1;
   }
 });
@@ -61,9 +61,9 @@ productTwoQuantityContainer.addEventListener("click", function(event) {
   let productQuantityElement = productTwoQuantityContainer.children[1];
   let productQuantityElementTextContent = Number(productQuantityElement.textContent);
 
-  if (clickedElement.className === "increment-button") {
+  if (clickedElement.classList.contains("add") === true) {
     productQuantityElement.textContent = productQuantityElementTextContent + 1;
-  } else if (clickedElement.className === "decrement-button" && productQuantityElementTextContent > 0) {
+  } else if (clickedElement.classList.contains("remove") === true  && productQuantityElementTextContent > 0) {
     productQuantityElement.textContent = productQuantityElementTextContent - 1;
   }
 });
