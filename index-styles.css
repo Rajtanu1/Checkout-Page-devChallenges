@@ -122,7 +122,7 @@ input {
 
 .increment-button, .decrement-button {
 	height: 20px;
-	padding: 0px 4px 4px;
+	padding: 2px 4px 4px;
 	border-radius: 6px;
 	background-color: #E0E0E0;
 	font-size: 1.8rem;
@@ -173,6 +173,7 @@ input {
 
 .field {
   display: flex;
+  align-items: center;
   margin-top: 0.5rem;
   padding: 12px;
   border: 1px solid #828282;
@@ -200,6 +201,7 @@ input {
 }
 
 [name="postal"] {
+  min-height: 20px;
   width: 70%;
 }
 
@@ -244,6 +246,7 @@ input {
 
 .checkbox-container {
   display: flex;
+  align-items: center;
   width: max-content;
   margin-bottom: 1.25rem;
 }
