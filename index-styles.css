@@ -1,0 +1,415 @@
+body {
+  margin: 0px; 
+  padding: 0px 5vw;
+}
+
+p {
+  margin: 0px;
+}
+
+input {
+   all: unset;
+   flex-grow: 1;
+   font-family: 'Montserrat', Verdana;
+   font-size: 12px;
+   font-weight: 600;
+}
+
+.header__h1 {
+  font-family: 'Montserrat', Verdana;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4E5150;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.order-details-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 14px;
+  background-color: #F2F2F2;
+}
+
+.ordered-product {
+  display: flex;
+}
+
+.product-one {
+  margin-bottom: 1.5rem;
+}
+
+.product-two {
+  margin-bottom: 4rem;
+}
+
+.ordered-product__image-container {
+  width: 160px;
+  max-width: 175px;
+  margin-right: 1.5rem;
+}
+
+.ordered-product__image {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.ordered-product__details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.details__product-name {
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', Verdana;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4E5150;
+}
+
+.details__product-price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.price-container__discounted-price {
+  margin-right: 12px;
+  font-family: 'Montserrat', Verdana;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F2994A;
+}
+
+.price-container__price {
+  font-family: 'Montserrat', Verdana;
+  font-size: 10px;
+  font-weight: 600;
+  color: #4E5050;
+}
+
+.details__quantity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 135px;
+  height: 50px;
+  margin-top: auto;
+  padding: 0px 0.5rem;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.product-quantity {
+  margin: auto;
+  padding-bottom: 4px;
+  font-family: 'Montserrat', Verdana;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.increment-button, .decrement-button {
+	height: 20px;
+	padding: 0px 4px 4px;
+	border-radius: 6px;
+	background-color: #E0E0E0;
+	font-size: 1.8rem;
+	line-height: 18px;
+  color: #828282;
+}
+
+.decrement-button {
+  padding: 0px 6px 4px;
+}
+
+.shipping-charges, .total-charges {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0px;
+  border-top: 0.5px solid #BDBDBD;
+  font-family: 'Montserrat', Verdana;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.buyer-form {
+  max-width: 485px;
+}
+
+.buyer-form__contact-information-section {
+  margin-bottom: 3rem;
+}
+
+.contact-information-section__title, .shipping-address-section__title {
+  font-family: 'Montserrat', Verdana;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.label-field-container {
+  margin: 1.25rem 0px;
+}
+
+.label {
+  font-family: 'Montserrat', Verdana;
+  font-size: 10px;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.field {
+  display: flex;
+  margin-top: 0.5rem;
+  padding: 12px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  color: #828282;
+}
+
+.field-icon {
+  margin-right: 0.5rem;
+  font-size: 14px;
+  color: #828282;
+}
+
+.country-postal-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-address-section__country-container, .shipping-address-section__postal-code-container {
+  width: 48%;
+}
+
+[name="country"] {
+  width: 60%;
+}
+
+[name="postal"] {
+  width: 70%;
+}
+
+.drop-down-box-container {
+  display: inline-block;
+  position: relative;
+  width: max-content;
+}
+
+.drop-down-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: black;
+  font-size: 10px;
+  font-weight: 600;
+  transition: 0.3s transform;
+  transform: scale(0);
+  transform-origin: top right;
+}
+
+.drop-down-option {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ffa13b;
+  color: #ffa13b;
+}
+
+.drop-down-icon {
+  margin-left: 4px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: #E0E0E0;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  width: max-content;
+  margin-bottom: 1.25rem;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.checkbox-container__p {
+  font-family: 'Montserrat', Verdana;
+  font-size: 10px;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.fa-check {
+  color: #F2994A;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.continue-button {
+  all: unset;
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #F2994A;
+  box-shadow: 0px 4px #c48d27;
+  font-family: 'Montserrat', Verdana;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  transition: 0.2s box-shadow ease-out;
+}
+
+.continue-button:active {
+  box-shadow: 0px 0px #c48d27;
+}
+
+.validation-popup {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  width: max-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: black;
+  font-family: 'Montserrat', Verdana;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  transition: 0.5s top;
+  animation-duration: 3s;
+}
+
+@keyframes slide-in-out {
+  0% {
+    top: -100%;
+  }
+  25% {
+    top: 0.5rem;
+  }
+  50% {
+    top: 0.5rem;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+.fa-circle-check {
+  margin-right: 0.5rem;
+  font-size: 18px;
+}
+
+.footer {
+  width: max-content;
+  margin: auto;
+}
+
+.footer__p {
+  margin: 0.5rem 0px;
+  font-family: 'Montserrat', Verdana;
+  font-size: 12px;
+  font-weight: 600;
+  color: #BDBDBD;
+}
+
+@media (min-width: 769px) {
+  input {
+    font-size: 16px;
+  }
+
+  .header {
+    margin: 2.25rem 0px;
+  }
+
+  .header__h1 {
+    font-size: 36px;
+  }
+
+  .main {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10rem;
+  }
+
+  .order-details-container {
+    width: 40%
+  }
+
+  .details__product-name {
+    font-size: 16px;
+  }
+
+  .price-container__discounted-price {
+    font-size: 16px;
+  }
+
+  .price-container__price {
+    font-size: 12px;
+  }
+
+  .shipping-charges-label, .total-charges-label {
+    font-size: 18px;
+  }
+
+  .buyer-form {
+    width: 50%;
+    margin-right: 10%;
+  }
+
+  .contact-information-section__title, .shipping-address-section__title {
+    font-size: 18px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .checkbox-container__p {
+    font-size: 12px;
+  }
+
+  .footer__p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    padding: 0px 15vw;
+  }
+}

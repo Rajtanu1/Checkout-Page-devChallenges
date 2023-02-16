@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82fa38c892.js" crossorigin="anonymous"></script>
+    <link href="./index-styles.css" rel="stylesheet">
+    <title>
+      Checkout Page
+    </title>
+  </head>
+  <body>
+  <header class="header">
+    <h1 class="header__h1">Checkout</h1>
+  </header>
+  <main class="main">
+    <div class="order-details-container">
+      <div class="ordered-product product-one">
+        <div class="ordered-product__image-container">
+          <img class="ordered-product__image" src="./images/photo1.png" alt="vintage backpack">
+        </div>
+        <div class="ordered-product__details details">
+          <p class="details__product-name">
+            Vintage Backpack
+          </p>
+          <div class="details__product-price-container price-container">
+            <p class="price-container__discounted-price">
+              $54.99
+            </p>
+            <p class="price-container__price">
+              <del>
+                $94.99
+              </del>
+            </p>
+          </div>
+          <div class="details__quantity-container product-one__quantity-container">
+            <div class="increment-button">
+              +
+            </div>
+            <p class="product-quantity">
+              1
+            </p>
+            <div class="decrement-button">
+              -
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ordered-product product-two">
+        <div class="ordered-product__image-container">
+          <img class="ordered-product__image" src="./images/photo2.png" alt="levi sneakers">
+        </div>
+        <div class="ordered-product__details details">
+          <p class="details__product-name">
+            Levi Sneakers
+          </p>
+          <div class="details__product-price-container price-container">
+            <p class="price-container__discounted-price">
+                $74.99
+            </p>
+            <p class="price-container__price">
+              <del>
+                $124.99
+              </del>
+            </p>
+          </div>
+          <div class="details__quantity-container product-two__quantity-container">
+            <div class="increment-button">
+              +
+            </div>
+            <p class="product-quantity">
+              1
+            </p>
+            <div class="decrement-button">
+              -
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-details__shipping-and-total-charges">
+        <p class="shipping-charges">
+          <span class="shipping-charges-label">
+            Shipping
+          </span>
+          <span class="charge">
+            $19
+          </span>
+        </p>
+        <p class="total-charges">
+          <span class="total-charges-label">
+            Total 
+          </span>
+          <span class="charge">
+            $148.98
+          </span>
+        </p>
+      </div>
+    </div>
+    <form class="buyer-form">
+      <div class="buyer-form__contact-information-section contact-information-section">
+        <p class="contact-information-section__title">
+          Contact information
+        </p>
+        <div class="contact-information-section__email-container label-field-container">
+          <div class="email-label label">
+            E-mail
+          </div>
+          <div class="email-field field">
+            <i class="fa-solid fa-envelope field-icon"></i>
+            <input type="email" id="email" name="email" placeholder="Enter your email.." required>
+          </div>
+        </div>
+        <div class="contact-information-section__phone-number-container label-field-container">
+          <div class="phone-number-label label">
+            Phone
+          </div>
+          <div class="phone-number-field field">
+            <i class="fa-solid fa-phone field-icon"></i>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone.." required>
+          </div>
+        </div>
+      </div>
+      <div class="buyer-form__shipping-address-section shipping-address-section">
+        <p class="shipping-address-section__title">
+          Shipping address
+        </p>
+        <div class="shipping-address-section__fullname-container label-field-container">
+          <div class="fullname-label label">
+            Full name
+          </div>
+          <div class="fullname-field field">
+            <i class="fa-solid fa-user field-icon"></i>
+            <input type="text" id="fullname" name="fullname" placeholder="Your fullname.." required>
+          </div>
+        </div>
+        <div class="shipping-address-section__address-container label-field-container">
+          <div class="address-label label">
+            Address
+          </div>
+          <div class="address-field field">
+            <i class="fa-solid fa-house field-icon"></i>
+            <input type="text" id="address" name="address" placeholder="Your address.." required>
+          </div>
+        </div>
+        <div class="shipping-address-section__city-container label-field-container">
+          <div class="city-label label">
+            City
+          </div>
+          <div class="city-field field">
+            <i class="fa-solid fa-city field-icon"></i>
+            <input type="text" id="city" name="city" placeholder="Your city.." required>
+          </div>
+        </div>
+        <div class="country-postal-wrapper">
+          <div class="shipping-address-section__country-container label-field-container">
+            <div class="country-label label">
+              Country
+            </div>
+            <div class="country-field field">
+              <i class="fa-solid fa-globe field-icon"></i>
+              <input type="text" id="country" name="country" placeholder="Your country.." required>
+              <div class="drop-down-box-container invisible">
+                <i class="fa-solid fa-angle-down drop-down-icon"></i>
+                <div class="drop-down-box">
+                  <p class="drop-down-option">France</p>
+                  <p class="drop-down-option">India</p>
+                  <p class="drop-down-option">America</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shipping-address-section__postal-code-container label-field-container">
+            <div class="postal-code-label label">
+              Postal Code
+            </div>
+            <div class="postal-code-field field">
+              <i class="fa-solid fa-envelopes-bulk field-icon"></i>
+              <input type="text" id="postal code" name="postal" placeholder="Your postal code.." required>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <div class="checkbox">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <p class="checkbox-container__p">
+          Save this information for future next time
+        </p>
+      </div>
+      <button type="submit" class="continue-button">
+        Continue
+      </button>
+    </form>
+    <div class="validation-popup">
+      <i class="fa-solid fa-circle-check"></i>
+      <p>
+        Validation successful.
+      </p>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__p">
+      created by Rajtanu Chakravarty - devChallenges.io
+    </p>
+  </footer>
+  <script src="./index-script.js"></script>
+  </body>
+</html>
